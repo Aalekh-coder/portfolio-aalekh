@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 const images = [
@@ -30,7 +29,7 @@ const images = [
 
 const ImageGrid = () => {
   return (
-    <div className="py-20 bg-gray-100">
+    <div className="py-20  bg-zinc-950">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">My Work</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -60,7 +60,7 @@ const Hero = () => {
             alt={`Background ${index + 1}`}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gray-900 bg-opacity-60" />
+          <div className="absolute inset-0 bg-zinc-950 bg-opacity-60" />
         </motion.div>
       ))}
 

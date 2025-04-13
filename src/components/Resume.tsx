@@ -4,7 +4,7 @@ import { Mail, Phone, Globe, Linkedin, Github } from 'lucide-react';
 
 const Resume = () => {
   return (
-    <div className="py-20 bg-gray-900 text-white">
+    <div className="py-20 bg-zinc-950 text-white">
       <div className="max-w-4xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

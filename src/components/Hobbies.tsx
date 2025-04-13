@@ -6,11 +6,11 @@ const hobbies = [
   {
     icon: <Gamepad2 className="w-8 h-8" />,
     name: "Gaming",
-    description: "Competitive gaming enthusiast"
+    description: "Story gaming enthusiast"
   },
   {
     icon: <Palette className="w-8 h-8" />,
-    name: "Sketching",
+    name: "Graphic design",
     description: "Digital art & illustration"
   },
   {
@@ -27,7 +27,7 @@ const hobbies = [
 
 const Hobbies = () => {
   return (
-    <div className="py-20 bg-gray-900 text-white">
+    <div className="py-20 bg-zinc-950 text-white">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">Hobbies & Interests</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -40,7 +40,7 @@ const Hobbies = () => {
               viewport={{ once: true }}
               className="bg-gray-800 p-6 rounded-xl text-center hover:bg-gray-700 transition-colors"
             >
-              <div className="flex justify-center mb-4 text-blue-400">
+              <div className="flex justify-center mb-4 text-[#ff206b]">
                 {hobby.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{hobby.name}</h3>

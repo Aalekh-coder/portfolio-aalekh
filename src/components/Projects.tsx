@@ -1,28 +1,46 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
+import wanderlustImg from "../image/wanerlust3.jpg"
+import news24 from "../image/new24.png"
+import sketch from "../image/sketchkingston.png"
+import apple from "../image/p4.svg"
+import brain from "../image/brainwave.png"
 
 const projects = [
   {
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce platform built with MERN stack, featuring real-time updates and payment integration.",
-    liveLink: "https://project1.com",
-    githubLink: "https://github.com/project1"
+    image: wanderlustImg,
+    title: "Wanderlust: The Ultimate Hotel Management System for Travelers",
+    description: "Wanderlust could be the ideal solution. It not only caters to hotels but also enhances the travel experience by integrating essential features.",
+    liveLink: "https://wanerlust.onrender.com",
+    githubLink: "https://github.com/Aalekh-coder/FullStack-Project-1"
   },
   {
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates and team features.",
-    liveLink: "https://project2.com",
-    githubLink: "https://github.com/project2"
+    image: news24,
+    title: "News 24/7: daily news web app",
+    description: "Your daily new web app that updated all time",
+    liveLink: "https://asseignment3.vercel.app",
+    githubLink: "https://github.com/Aalekh-coder/asseignment3"
   },
   {
-    image: "https://images.unsplash.com/photo-1552308995-2baac1ad5490",
-    title: "Social Media Dashboard",
-    description: "Analytics dashboard for social media management with data visualization.",
-    liveLink: "https://project3.com",
-    githubLink: "https://github.com/project3"
+    image: sketch,
+    title: "sketchkingston",
+    description: "A marketplace for artists to sell personal art and buyers to discover unique creations graphics related marketplace also for freelancers",
+    liveLink: "https://sketchkingston-1.onrender.com/",
+    githubLink: "hhttps://sketchkingston-1.onrender.com/"
+  },
+  {
+    image: brain,
+    title: "Brain wave",
+    description: "Brain wave mordan looking landing page",
+    liveLink: "https://brainwave-wine-ten.vercel.app",
+    githubLink: "https://github.com/Aalekh-coder/BrainWave"
+  },
+  {
+    image: apple,
+    title: "Animated Apple Iphone 3D Website",
+    description: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    liveLink: "https://apple-nu-six.vercel.app",
+    githubLink: "https://github.com/Aalekh-coder/Apple-Clone"
   }
 ];
 
@@ -50,7 +68,7 @@ const Projects = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <p className="text-gray-600 mb-4">{project.description.slice(0,100)}...</p>
                 <div className="flex gap-4">
                   <a
                     href={project.githubLink}
