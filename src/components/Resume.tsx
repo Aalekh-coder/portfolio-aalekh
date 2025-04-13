@@ -4,14 +4,14 @@ import { Mail, Phone, Globe, Linkedin, Github } from 'lucide-react';
 
 const Resume = () => {
   return (
-    <div className="py-20 bg-zinc-950 text-white">
-      <div className="max-w-4xl mx-auto px-4">
+    <div className="py-20 bg-[#0d0416] text-white lg:mx-auto">
+      <div className="max-w-7xl mx-auto px-4 lg:flex lg:items-center lg:justify-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="bg-zinc-800 rounded-xl p-8 shadow-xl"
+          className="bg-gray-950 rounded-xl p-8 shadow-xl lg:w-[80vw]"
         >
           {/* Header */}
           <div className="text-center mb-8">
@@ -117,7 +117,7 @@ const Resume = () => {
               </div>
 
               {/* Wanderlust */}
-              <div className="bg-gray-700/50 p-6 rounded-lg">
+              <div className="bg-zinc-700/50 p-6 rounded-lg">
                 <div className="flex justify-between items-start mb-3">
                   <div>
                     <h3 className="text-xl font-semibold">Hotel Booking Platform - Wanderlust</h3>

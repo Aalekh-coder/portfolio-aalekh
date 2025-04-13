@@ -46,9 +46,9 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="py-20 bg-white">
+    <div className="py-20 bg-zinc-950">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">Featured Projects</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-white">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
@@ -57,7 +57,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl shadow-lg overflow-hidden"
+              className="bg-gray-950 rounded-xl shadow-lg overflow-hidden text-white"
             >
               <div className="aspect-w-16 aspect-h-9">
                 <img
@@ -68,7 +68,7 @@ const Projects = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description.slice(0,100)}...</p>
+                <p className="text-white mb-4">{project.description.slice(0,100)}...</p>
                 <div className="flex gap-4">
                   <a
                     href={project.githubLink}
@@ -76,8 +76,8 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-gray-700 hover:text-black transition-colors"
                   >
-                    <Github className="w-5 h-5" />
-                    <span>Code</span>
+                    <Github className="w-5 h-5" color="purple"/>
+                    <span className='text-purple-500'>Code</span>
                   </a>
                   <a
                     href={project.liveLink}

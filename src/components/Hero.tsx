@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { Code2 } from 'lucide-react';
@@ -9,20 +9,87 @@ import img4 from "../image/img4.jpg"
 import img5 from "../image/img5.jpg" 
 import img6 from "../image/img6.jpg" 
 
+import Angular from "../image/particle/Angular.png"
+import Appwrite from "../image/particle/Appwrite.png"
+import AWS from "../image/particle/AWS.png"
+import Django from "../image/particle/Django.png"
+import Firebase from "../image/particle/Angular.png"
+import Flask from "../image/particle/Flask.png"
+import Git from "../image/particle/Git.png"
+import Homebrew from "../image/particle/Homebrew.png"
+import Jasmine from "../image/particle/Jasmine.png"
+import Java from "../image/particle/Java.png"
+import LinkedIn from "../image/particle/LinkedIn.png"
+import Linux from "../image/particle/Linux.png"
+import MongoDB from "../image/particle/MongoDB.png"
+import NET from "../image/particle/NET.png"
+import Nodejs from "../image/particle/Node.js.png"
+import NumPy from "../image/particle/NumPy.png"
+import Postman from "../image/particle/Postman.png"
+import React from "../image/particle/React.png"
+import Redux from "../image/particle/Redux.png"
+import Sass from "../image/particle/Sass.png"
+import Slack from "../image/particle/Slack.png"
+import Vercel from "../image/particle/Vercel.png"
+import Vite from "../image/particle/Vite.js.png"
+import C from "../image/particle/C.png"
+import GoLand from "../image/particle/GoLand.png"
+import GoogleCloud from "../image/particle/GoogleCloud.png"
+import RaspberryPi from "../image/particle/RaspberryPi.png"
+import RubyMine from "../image/particle/RubyMine.png"
+import SQLDeveloper from "../image/particle/SQLDeveloper.png"
+import Svelte from "../image/particle/Svelte.png"
+import Ubuntu from "../image/particle/Ubuntu.png"
+
 const images = [
-img1,
-img2,
-img3,
-img4,
-img5,
-img6
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6
 ];
+
+
+const particals = [
+  Angular,
+Appwrite,
+AWS,
+Django,
+Firebase,
+Flask,
+Git,
+Homebrew,
+Jasmine,
+Java,
+LinkedIn,
+Linux,
+MongoDB,
+NET,
+Nodejs,
+NumPy,
+Postman,
+React,
+Redux,
+Sass,
+Slack,
+Vercel,
+  Vite,
+  C,
+  GoLand,
+  GoogleCloud,
+  RaspberryPi,
+  RubyMine,
+  SQLDeveloper,
+  Svelte,
+  Ubuntu
+]
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
-  const springConfig = { damping: 25, stiffness: 700 };
+  const springConfig = { damping: 35, stiffness: 1000 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
 
@@ -60,13 +127,13 @@ const Hero = () => {
             alt={`Background ${index + 1}`}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-zinc-950 bg-opacity-60" />
+          <div className="absolute inset-0 bg-zinc-950 bg-opacity-40" />
         </motion.div>
       ))}
 
       {/* Cursor Follower */}
       <motion.div
-        className="w-8 h-8 bg-red-500 rounded-full fixed pointer-events-none z-50 mix-blend-screen"
+        className="w-8 h-8 bg-[#5ad0ff] rounded-full fixed pointer-events-none z-50 mix-blend-screen"
         style={{
           x: cursorXSpring,
           y: cursorYSpring,
@@ -74,11 +141,12 @@ const Hero = () => {
       />
       
       {/* Animated particles */}
-      <div className="absolute inset-0 z-20 pointer-events-none">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
+      <div className="absolute inset-0 z-20  pointer-events-none">
+        {particals?.map((p, i) => (
+          <motion.img
+            src={p}
             key={i}
-            className="absolute w-2 h-2 bg-blue-500 rounded-full"
+            className="absolute w-10 h-10"
             initial={{
               x: Math.random() * window.innerWidth,
               y: Math.random() * window.innerHeight,
@@ -92,8 +160,8 @@ const Hero = () => {
               repeat: Infinity,
               ease: "linear"
             }}
-            style={{ opacity: 0.3 }}
-          />
+            style={{ opacity: 5 }}
+          ></motion.img>
         ))}
       </div>
       
