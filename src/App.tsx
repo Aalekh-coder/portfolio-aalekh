@@ -3,6 +3,7 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Hobbies from './components/Hobbies';
 import ArtGrid from "./components/ArtGrid.tsx"
+import SocialMedia from './components/SocialMedia.tsx';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Projects />
       <Resume />
       <Hobbies />
+      <SocialMedia />
     </div>
   );
 }
