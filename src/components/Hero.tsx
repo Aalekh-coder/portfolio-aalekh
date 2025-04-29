@@ -174,7 +174,7 @@ const Hero = () => {
             className="flex items-center justify-center gap-3 mb-4"
           >
             <Code2 className="w-10 h-10 text-blue-500" />
-            <h1 className="text-4xl md:text-6xl font-bold text-white">
+            <h1 className="text-4xl md:text-6xl font-bold text-white  px-2 py-4 rounded-xl h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100">
               Hello, I am Aalekh
             </h1>
           </motion.div>
@@ -183,7 +183,7 @@ const Hero = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl md:text-2xl text-blue-400"
+            className="text-xl md:text-2xl text-pink-100"
           >
             <TypeAnimation
               sequence={[

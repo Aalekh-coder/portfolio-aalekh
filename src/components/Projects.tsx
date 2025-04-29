@@ -5,8 +5,24 @@ import news24 from "../image/new24.png"
 import sketch from "../image/sketchkingston.png"
 import apple from "../image/p4.svg"
 import brain from "../image/brainwave.png"
+import ecom from "../image/project/ecom.png"
+import medium from "../image/project/mendum.png"
 
 const projects = [
+  {
+    image: ecom,
+    title: "Ecommerce - web app",
+    description: "Ecommerce web app with Auth Admin payapl",
+    liveLink: "https://ecom-mern-aalekh-client.onrender.com",
+    githubLink: "https://github.com/Aalekh-coder/Ecom-mern-sangham/tree/main"
+  },
+  {
+    image: medium,
+    title: "Medium Clone",
+    description: "Medium clone for you reading",
+    liveLink: "https://blog-app-beta-silk.vercel.app/login",
+    githubLink: "https://blog-app-beta-silk.vercel.app/login"
+  },
   {
     image: wanderlustImg,
     title: "Wanderlust: The Ultimate Hotel Management System for Travelers",
