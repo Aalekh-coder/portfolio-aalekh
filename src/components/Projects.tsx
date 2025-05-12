@@ -7,57 +7,68 @@ import apple from "../image/p4.svg"
 import brain from "../image/brainwave.png"
 import ecom from "../image/project/ecom.png"
 import medium from "../image/project/mendum.png"
+import gta from "../image/project/gta.png"
 
 const projects = [
+  {
+    image: gta,
+    title: "GTA VI",
+    description: "GTA VI Landing page with GSAP",
+    liveLink: "https://gta-vi-two.vercel.app",
+    githubLink: "https://github.com/Aalekh-coder/gta-VI",
+  },
   {
     image: ecom,
     title: "Ecommerce - web app",
     description: "Ecommerce web app with Auth Admin payapl",
     liveLink: "https://ecom-mern-aalekh-client.onrender.com",
-    githubLink: "https://github.com/Aalekh-coder/Ecom-mern-sangham/tree/main"
+    githubLink: "https://github.com/Aalekh-coder/Ecom-mern-sangham/tree/main",
   },
   {
     image: medium,
     title: "Medium Clone",
     description: "Medium clone for you reading",
     liveLink: "https://blog-app-beta-silk.vercel.app/login",
-    githubLink: "https://blog-app-beta-silk.vercel.app/login"
+    githubLink: "https://blog-app-beta-silk.vercel.app/login",
   },
   {
     image: wanderlustImg,
     title: "Wanderlust: The Ultimate Hotel Management System for Travelers",
-    description: "Wanderlust could be the ideal solution. It not only caters to hotels but also enhances the travel experience by integrating essential features.",
+    description:
+      "Wanderlust could be the ideal solution. It not only caters to hotels but also enhances the travel experience by integrating essential features.",
     liveLink: "https://wanerlust.onrender.com",
-    githubLink: "https://github.com/Aalekh-coder/FullStack-Project-1"
+    githubLink: "https://github.com/Aalekh-coder/FullStack-Project-1",
   },
   {
     image: news24,
     title: "News 24/7: daily news web app",
     description: "Your daily new web app that updated all time",
     liveLink: "https://asseignment3.vercel.app",
-    githubLink: "https://github.com/Aalekh-coder/asseignment3"
+    githubLink: "https://github.com/Aalekh-coder/asseignment3",
   },
   {
     image: sketch,
     title: "sketchkingston",
-    description: "A marketplace for artists to sell personal art and buyers to discover unique creations graphics related marketplace also for freelancers",
+    description:
+      "A marketplace for artists to sell personal art and buyers to discover unique creations graphics related marketplace also for freelancers",
     liveLink: "https://sketchkingston-1.onrender.com/",
-    githubLink: "hhttps://sketchkingston-1.onrender.com/"
+    githubLink: "hhttps://sketchkingston-1.onrender.com/",
   },
   {
     image: brain,
     title: "Brain wave",
     description: "Brain wave mordan looking landing page",
     liveLink: "https://brainwave-wine-ten.vercel.app",
-    githubLink: "https://github.com/Aalekh-coder/BrainWave"
+    githubLink: "https://github.com/Aalekh-coder/BrainWave",
   },
   {
     image: apple,
     title: "Animated Apple Iphone 3D Website",
-    description: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    description:
+      "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     liveLink: "https://apple-nu-six.vercel.app",
-    githubLink: "https://github.com/Aalekh-coder/Apple-Clone"
-  }
+    githubLink: "https://github.com/Aalekh-coder/Apple-Clone",
+  },
 ];
 
 const Projects = () => {
